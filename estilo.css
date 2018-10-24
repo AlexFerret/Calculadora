@@ -1,0 +1,156 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*CALCULADORA*/
+
+article{
+	width: 100%;
+	height: 25%;
+	position: fixed;
+	top: 0px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+	input{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		float: right;
+		border: none;
+		font-family: 'K2D', sans-serif;
+		color: #0F5C7D;
+		font-size: 45px;
+		text-align: right;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+section{
+	width: 100%;
+	height: 75%;
+	position: fixed;
+	top: 25%;
+}
+
+	div{
+		width: 100%;
+		height: 20%;
+		position: relative;
+		float: left;
+	}
+
+	button{
+		width: 25%;
+		height: 100%;
+		position: relative;
+		float: left;
+		border: none;
+		color: white;
+		font-family: 'K2D', sans-serif;
+		font-size: 30px;
+	}
+
+	.operacion{
+		background: #81b6e3;
+	}
+
+	.dato{
+		background: #0f5e7f;
+	}
+
+	.igual{
+		width: 50%;
+		background: #a3d749;
+	}
+
+/*PANTALLA SECRETA*/
+
+span{
+	width: 100%;
+	height: 30%;
+	position: fixed;
+	background: #81b6e3;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.9);
+	z-index: 1;
+	display: flex;
+  	justify-content: center;
+   	align-items: center;
+}
+
+	h1{
+		font-family: 'K2D', sans-serif;
+		color: white;
+		text-align: center;
+		height: 40px;
+		position: relative;
+		top: -25%;
+	}
+
+.otro{
+	width: 100%;
+	height: 70%;
+	position: fixed;
+	top: 15%;
+	background: #0f5e7f
+	z-index: -1;
+}
+
+	textarea{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		float: left;
+		border: none;
+		background: #0f5e7f;
+		padding: 10px;
+		box-sizing: border-box;
+		font-family: 'K2D', sans-serif;
+		color: white;
+		font-size: 20px;
+	}
+
+.opciones{
+	width: 100%;
+	height: 15%;
+	position: fixed;
+	top: 85%;
+	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.9);
+	z-index: 1;
+}
+
+	.menu{
+		width: 50%;
+		height: 100%;
+		background: #81b6e3;
+	}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+
+	.menu-guardar{
+		background: #a3d749;
+		width: 50%;
+	}
+
+	ul{
+		background: red;
+		width: 90%;
+		position: relative;
+		float: left;
+		left: 5%;
+		top: 5px;
+		list-style: none;
+		font-family: 'K2D', sans-serif;
+		padding: 5px;
+		margin-bottom: 11px;
+		box-sizing: border-box;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		background: #fffcdb;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+	}

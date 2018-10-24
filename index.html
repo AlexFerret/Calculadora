@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Secreta</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+</head>
+<body>
+	<article>
+		<input type="text" id="display" name="" placeholder="0">
+	</article>
+	<section>
+		<div>
+			<button class="operacion" onclick="borrar()">CE</button>
+			<button class="operacion" onclick="acceso()">+/-</button>			
+			<button class="operacion" onclick="concatenar(' % ')">%</button>
+			<button class="operacion" onclick="concatenar(' / ')">÷</button>
+		</div>
+		<div>
+			<button class="dato" onclick="concatenar(7)">7</button>
+			<button class="dato" onclick="concatenar(8)">8</button>
+			<button class="dato" onclick="concatenar(9)">9</button>
+			<button class="operacion" onclick="concatenar(' * ')">x</button>
+		</div>
+		<div>
+			<button class="dato" onclick="concatenar(4)">4</button>
+			<button class="dato" onclick="concatenar(5)">5</button>
+			<button class="dato" onclick="concatenar(6)">6</button>
+			<button class="operacion" onclick="concatenar(' + ')">+</button>
+		</div>
+		<div>
+			<button class="dato" onclick="concatenar(1)">1</button>
+			<button class="dato" onclick="concatenar(2)">2</button>
+			<button class="dato" onclick="concatenar(3)">3</button>
+			<button class="operacion" onclick="concatenar(' - ')">-</button>
+		</div>
+		<div>
+			<button class="dato" onclick="concatenar('.')">.</button>
+			<button class="dato" onclick="concatenar(0)">0</button>
+			<button class="igual" onclick="igual()">=</button>
+		</div>
+	</section>
+</body>
+</html>
+
+<script src="calculadora.js"></script>
