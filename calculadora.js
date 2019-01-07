@@ -27,17 +27,16 @@ function acceso(){
 texto = document.getElementById('texto');
 notas = document.getElementById('notas');
 
-window.addEventListener('load',cargar, true);
-
-function cargar(){
-	if (localStorage.getItem('notas')) {
-			notas.innerHTML = localStorage.getItem('notas');
-		}
-}
-
 function agregar(){
 	notas.innerHTML += "<li>" + texto.value + "</li>";
 	localStorage.setItem('notas',notas.innerHTML);
 	texto.value = "";
 }
 
+window.addEventListener('load',cargar, true);
+
+function cargar(){
+	if (localStorage.getItem('notas')) {
+		notas.innerHTML = localStorage.getItem('notas');
+		}
+}
